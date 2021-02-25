@@ -3,7 +3,7 @@ import { ThemeContext } from '../context/ThemeContext';
 import { ThemeFormation, ThemeMe, ThemeProject, ThemeSkill, ThemeNetwork } from '../Themes/ThemeMain';
 import Formations from './contents/Formations';
 import Me from './contents/Me';
-import Networks from './contents/networks';
+import Networks from './contents/Networks';
 import Projects from './contents/Projects';
 import skills from './contents/Skills';
 import SectionPage from './SectionPage';
