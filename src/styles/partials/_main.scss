@@ -1,0 +1,11 @@
+@import './main/skills';
+@import './main/me';
+@import './main/formations';
+
+main {
+    section {    
+        padding-top: 70px;
+        height: calc(100vh - 70px);
+        position: relative;
+    }
+}
