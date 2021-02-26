@@ -24,6 +24,8 @@ export default function Main() {
         setTest('');
     }
 
+    addEventListener("scroll", scrolled, false);
+
     return (
         <main>
             <SectionPage
@@ -57,7 +59,6 @@ export default function Main() {
                 description={Networks()}
                 styleTheme={ThemeNetwork(styleTheme)}
             />
-            {addEventListener("scroll", scrolled, false)}
         </main>
     )
 }
