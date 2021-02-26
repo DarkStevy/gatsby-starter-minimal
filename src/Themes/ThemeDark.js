@@ -1,11 +1,11 @@
 export const ThemeDark = {
-    primary: 'black',
+    primary: 'rgb(23, 36, 78)',
     secondary: 'white',
-    tertiary: 'rgb(119, 100, 65)',
-    quaternary: 'rgb(64, 79, 105)',
-    five: 'rgb(102, 61, 61)',
-    six:'rgb(85, 27, 80)',
-    seven: 'rgb(42, 83, 60)',
+    tertiary: 'rgb(23, 36, 78)',
+    quaternary: 'rgb(23, 36, 78)',
+    five: 'rgba(0, 0, 0, 0.50)',
+    six:'rgb(23, 36, 78)',
+    seven: 'rgba(0, 0, 0, 0.50)',
     hover:{
         primary: ''
     }

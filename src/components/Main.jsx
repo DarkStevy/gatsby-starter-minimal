@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { ThemeContext } from '../context/ThemeContext';
 import { ThemeFormation, ThemeMe, ThemeProject, ThemeSkill, ThemeNetwork } from '../Themes/ThemeMain';
 import Formations from './contents/Formations';
@@ -11,7 +11,18 @@ import SectionPage from './SectionPage';
 export default function Main() {
 
     const theme = useContext(ThemeContext);
+    const [test, setTest] = useState();
     const {styleTheme} = theme
+
+    function scrolled(){
+        let essaie = document.querySelector("#projets");
+        let windowHeight = document.body.clientHeight,
+            currentScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        let add = essaie.offsetHeight * 2;
+        (currentScroll >= windowHeight - add) ?
+        setTest('fixed') : 
+        setTest('');
+    }
 
     return (
         <main>
@@ -33,6 +44,7 @@ export default function Main() {
                 description={skills()}
                 styleTheme={ThemeSkill(styleTheme)}
             />
+            <div id={test}></div>
             <SectionPage
                 id="projets"
                 title="Mes Projets"
@@ -45,6 +57,7 @@ export default function Main() {
                 description={Networks()}
                 styleTheme={ThemeNetwork(styleTheme)}
             />
+            {window.addEventListener("scroll", scrolled, false)}
         </main>
     )
 }
