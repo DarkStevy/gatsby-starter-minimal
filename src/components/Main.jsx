@@ -24,7 +24,7 @@ export default function Main() {
         setTest('');
     }
 
-    addEventListener("scroll", scrolled, false);
+    document.addEventListener("scroll", scrolled, false);
 
     return (
         <main>
