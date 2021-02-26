@@ -57,7 +57,7 @@ export default function Main() {
                 description={Networks()}
                 styleTheme={ThemeNetwork(styleTheme)}
             />
-            {window.addEventListener("scroll", scrolled, false)}
+            {addEventListener("scroll", scrolled, false)}
         </main>
     )
 }
