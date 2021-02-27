@@ -5,8 +5,8 @@
 main {
     
     background-image: url('../images/background.jpg');
-    background-size: contain;
-    background-repeat: repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     section {    
         padding-top: 70px;
