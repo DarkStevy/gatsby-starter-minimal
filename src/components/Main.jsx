@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import { ThemeContext } from '../context/ThemeContext';
 import { ThemeFormation, ThemeMe, ThemeProject, ThemeSkill, ThemeNetwork } from '../Themes/ThemeMain';
 import Formations from './contents/Formations';
@@ -24,7 +24,11 @@ export default function Main() {
         setTest('');
     }
 
-    document.addEventListener("scroll", scrolled, false);
+    useEffect(() => {
+        if(window){
+            window.addEventListener("scroll", scrolled, false);
+        }
+    }, []);
 
     return (
         <main>
