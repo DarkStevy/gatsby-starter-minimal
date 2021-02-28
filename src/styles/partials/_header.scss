@@ -39,6 +39,11 @@ header {
             top: 50%;
             transform: translateY(-50%);
             z-index: 20;
+
+            h1 {
+                font-family: $title;
+                font-size: 3.5rem;
+            }
         }
     }
 

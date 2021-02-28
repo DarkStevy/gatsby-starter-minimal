@@ -53,7 +53,7 @@ export default function Header(props){
                 <div id="filtre"></div>
                 <div>
                     <h1>Vergueiro Steven</h1>
-                    <h2>Développeur web Full stack</h2>
+                    <h4>Développeur web Full stack</h4>
                     <span>ReactJS - (Angular/symfony)</span>
                 </div>
             </div>
