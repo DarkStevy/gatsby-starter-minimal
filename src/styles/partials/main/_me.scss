@@ -8,12 +8,24 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        
         div {
             &:first-child{
                 width: $col-4;
+                text-align: center;
             }
             &:last-child{
                 width: $col-8;
+
+                p {
+                    font-size: 1.5rem;
+                    line-height: 3rem;
+                    font-weight: bold;
+
+                    span {
+                        font-weight: normal;
+                    }
+                }
             }
         }
     }

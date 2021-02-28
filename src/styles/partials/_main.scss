@@ -12,6 +12,11 @@ main {
         padding-top: 70px;
         height: calc(100vh - 70px);
         position: relative;
+
+         h2 {
+            padding: 0 30px;
+            font-size: 3rem;
+         }
     }
 
     >div {
